@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="searchForm">
+        <div class="form-input">
+          <input
+            class="form-input-text"
+            type="text"
+            id="cityInput"
+            placeholder="Enter City Name"
+          />
+          <button id="favoriteBtn" class="favorite-button button">
+            Favorite
+          </button>
+        </div>
+        <div class="form-submit">
+          <button
+            id="tWeather"
+            type="submit"
+            class="button submit-button"
+            value="Search"
+          >
+            Today
+          </button>
+          <button
+            id="fWeather"
+            type="submit"
+            class="button submit-button"
+            value="Search"
+          >
+            5 days
+          </button>
+        </div>
+      </form>
+      <div class="current-weather-group">
+        <div class="current-city">
+          <h1 id="cityName" class="city-name"></h1>
+          <label class="celcius">
+            <input type="radio" name="unit" value="metric" checked /> °C
+          </label>
+          <label class="fahrenheit">
+            <input type="radio" name="unit" value="imperial" /> °F
+          </label>
+        </div>
+
+        <!-- This is current weather and date-->
+
+        <div id="cWeather" class="current-forecast">
+          <div id="currentforecast" class="currentforecast">
+            current weather
+          </div>
+        </div>
+      </div>
+
+      <div id="cDate" class="current-date-group">
+        <div id="currentdate" class="currentdate">current date</div>
+        <div class="quote">
+          <p class="quote-text">
+            So divinely is the world organized that every one of us, in our
+            place and time, is in balance with everything else.
+          </p>
+          <p class="quote-author">Johann Wolfgang Von Goethe</p>
+        </div>
+      </div>
+
+      <!-- This is five days forecast and 3 hours update-->
+
+      <div id="fDWeather" hidden>
+      <div id="forecast" class="forecast"></div>
+      <div id="weatherInfo" class="weather-info hidden" >Choose a Day to show 3 Hours Forecast</div>
+      <button id="showGraphBtn" class="showgraph-button">Show Graph</button>
+
+      <div id="fDChart" class="showgraph-group">
+        
+        <canvas class="chartstyle"
+          id="weatherChart"
+          width="100"
+          height="50"
+          style="display: none"
+        ></canvas>
+      </div>
+
+
+
+      </div>
+
+    
+
+      <div id="fDChart" class="showgraph-group">
+        
+        <canvas class="chartstyle"
+          id="weatherChart"
+          width="100"
+          height="50"
+          style="display: none"
+        ></canvas>
+      </div>
+  
+
+ <!-- This is JS codes--> 
+
+<script src="./today.js"></script>
+<script src="./fiveDays.js"></script>
+<script src="./chart.js"></script>
+<script src="./beejay.js"></script>
+<script src="./favorite.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+
+</html>
