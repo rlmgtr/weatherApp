@@ -1,10 +1,16 @@
 
+ul {
+  list-style: none;
+}
+
 .fivedaysBox {
   border: 2px;
   border-style: solid;
   border-color: blue;
   margin: 10px;
-  width: 500px;
+  width: 1000px;
+  text-align: center;
+  border-radius: 25px;
 }
 
 .container {
@@ -12,7 +18,10 @@
   border-style: solid;
   border-color: blue;
   margin: 100px;
-  width: 300px;
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  border-radius: 25px;
 }
 
 .subcon {
@@ -20,6 +29,17 @@
   border-style: solid;
   border-color: purple;
   margin: 50px;
-  width: 100px;
+  width: 700px;
+  text-align: center;
+  border-radius: 25px;
 }
 
+.current-weather {
+display: block;
+right: 0;
+margin-right: auto;
+}
+
+.current-day {
+  display: block;
+}
