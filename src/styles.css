@@ -1,53 +1,37 @@
-
-ul {
-  list-style: none;
+.searchForm {
+margin: 100px;
+border-style: solid;
+padding: 100px;
+text-align: center;
 }
 
-.fivedaysBox {
-  border: 2px;
-  border-style: solid;
-  border-color: blue;
-  margin: 10px;
-  width: 1000px;
-  text-align: center;
-  border-radius: 25px;
+.currentWD {
+margin: 80px;
+border-style: solid;
+padding: 60px;
+text-align: center;
+display: flex;
+width: 600px;
+height: 200px;
 }
 
-.container {
-  border: 2px;
-  border-style: solid;
-  border-color: blue;
-  margin: 100px;
-  width: 700px;
-  height: 200px;
-  text-align: center;
-  border-radius: 25px;
+.day {
+padding: 50px;
+border-style: solid;
+margin: 50px;
+text-align: center;
 }
 
-.subcon {
-  border: 1px;
+.temp {
+  padding: 50px;
   border-style: solid;
-  border-color: purple;
   margin: 50px;
-  width: 700px;
   text-align: center;
-  border-radius: 25px;
 }
 
-.current-weather {
-position: static;
-float: right;
-display: block;
-
-
-}
-
-.current-day {
-  display: block;
-}
-
-.search-box{ 
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.fiveDaysWD {
+margin: 80px;
+border-style: solid;
+padding: 60px;
+text-align: center;
 }

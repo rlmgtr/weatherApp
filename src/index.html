@@ -4,81 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<!--this is search box -->
-<div class="container search-box">
-<input id="enterCity" class="eneterCityCN" placeholder="Enter your City" > 
-<button>Mark as Favorite</button>
-<p>
-<button>Today</button> <button>5 Days</button>
-
-</div>
-
-
-<!--this is Today: Date -->
-
-<div class="container current-weather">
-
-  <h3>(Temp)</h3>
-  <ul>
-   <li>min</li> 
-   <li>max</li> 
-  </ul>
-  
+  <div class="searchForm">
+<form>
+<input id="cityInput" type="text" placeholder="Search for City" />
+<button  id="currentW" type="submit">See current weather</button>
+<button name="fiveDaysW" type="submit">See five days forecast</button>
+</form>
   </div>
 
+<div class="currentWD">
 
-<!--this is Today: Weather -->
-
-<div class="container current-day right">
-
-  <h3>(Monday)</h3>
-  <ul>
-   <li>date</li> 
-   <li>others</li> 
-  </ul>
-  
+<div class="day">
+  <h2 id="cityName">City of</h2>
+  <h3>Monday*</h3>
+  <h3>Time</h3>
 </div>
 
 
 
-<!--this is to wrap the 5 days and every 3 hours -->
 
-<div class="fivedaysBox">
+<div class="temp">25</div>
+</div>  
 
-<!--this is 5 days -->
+<div class="fiveDaysWD">
+<div class="fiveDF">Five days forcast</div>
+</div> 
 
-<div>City of Sample</div>
-
-<div class="subcon">
-
-<h3>Day</h3>
-<h4>Date</h4>
-<img src="" alt="icon">
-<ul>
-  <li>Min</li>
-  <li>Max</li>
-</ul>
-
-</div>
-
-<!--this is every 3 hours -->
-
-<div class="subcon">
-
-<h3>Time</h3>
-<img src="" alt="icon">
-<ul>
-  <li>cloud</li>
-  <li>drop</li>
-  <li>wind</li>
-</ul>
-</div>
-
-</div>
-  
 </body>
 </html>
