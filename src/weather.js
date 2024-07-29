@@ -9,6 +9,13 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q='+cityName.value+'&appi
 .then(data => { 
     const cityName = data.name;
     document.getElementById("cityName").textContent = `${cityName}`
+});
 
 
-})
+
+
+
+
+function generateCurrentW (submit, getWeatherInfo) { document.getElementById('cityName')
+
+}
