@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Name Display</title>
+</head>
+<body>
+    <h1>Enter a City</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="fetchCityName()">Submit</button>
+    <h2 id="cityNameDisplay"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+async function fetchCityName() {
+    const cityInput = document.getElementById('cityInput').value;
+    const apiKey = 'your_openweathermap_api_key'; // Replace with your OpenWeatherMap API key
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${apiKey}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error('City not found');
+        }
+        const data = await response.json();
+        const cityName = data.name;
+        document.getElementById('cityNameDisplay').innerText = `City: ${cityName}`;
+    } catch (error) {
+        document.getElementById('cityNameDisplay').innerText = `Error: ${error.message}`;
+    }
+}
