@@ -1,16 +1,10 @@
 
 
-function weatherSourceAll() {
+function currentWeatherSource() {
         const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
         const API_KEY = "f1a7f601f87c9d97579ef8237cc83ff1";
-
-        const BASE_URLF = "";
-        const API_KEYF = "";
-
-        const cityInput = document.getElementById('cityInput').value;
-        
         const currentWeatherSourceURL = `${BASE_URL}?q=${cityInput}&appid=${API_KEY}`;
-        const forecastWeatherSourceURL = `${BASE_URLF}?q=${cityInput}&appid=${API_KEYF}`
+   
         
         fetch(currentWeatherSourceURL)
             .then(res => res.json())
@@ -25,9 +19,9 @@ function weatherSourceAll() {
             });
     
         return false; // Prevent form submission
-
-
-        fetch(forecastWeatherSourceURL)
-        .then
-
     }
+
+
+
+
+    
