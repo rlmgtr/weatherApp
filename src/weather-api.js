@@ -1,14 +1,15 @@
 
+
 function weatherSourceAll () {
 
-    function weatherSource() {
+    function currentWeatherSource() {
         const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
         const API_KEY = "f1a7f601f87c9d97579ef8237cc83ff1";
         const cityInput = document.getElementById('cityInput').value;
     
-        const weatherSourceURL = `${BASE_URL}?q=${cityInput}&appid=${API_KEY}`;
+        const currentWeatherSourceURL = `${BASE_URL}?q=${cityInput}&appid=${API_KEY}`;
     
-        fetch(weatherSourceURL)
+        fetch(currentWeatherSourceURL)
             .then(res => res.json())
             .then(data => {
                 document.getElementById('cityName').textContent = `${data.name}`;
@@ -21,6 +22,18 @@ function weatherSourceAll () {
             });
     
         return false; // Prevent form submission
+    }
+
+
+
+    function fiveDaysWeatherSource () {
+        const BASE_URLfive = "https://api.openweathermap.org/data/2.5/forecast";
+        const API_KEYfive = "f1a7f601f87c9d97579ef8237cc83ff1";
+        const cityInput = document.getElementById('cityInput').value;
+
+        const fiveDaysWeatherSource = `${BASE_URLfive}?q=${cityInput}&appid=${API_KEYfive}`;
+    
+
     }
 
 }
