@@ -7,6 +7,8 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+
   <div class="SearchForm">
     <form onsubmit="return weatherSourceAll()">
       <input id="cityInput" type="search" placeholder="Search for City" />
@@ -15,25 +17,31 @@
 
 
   <button id="currentW" type="submit">See current weather</button>
-      <button name="fiveDaysW" type="submit">See five days forecast</button>
+  <button name="fiveDaysW" type="submit">See five days forecast</button>
 
-  <div class="currentWD">
+<div class="currentWD">
     <div class="day">
       <h2 id="cityName"></h2>
       <h3>Monday*</h3>
       <h3>Time</h3>
     </div>
-    <div>
+
+<div>
       <p id="temp">25</p>
       <ul>
         <li id="min"></li>
         <li id="max"></li> 
       </ul>
   </div>  
+</div>
+
 
   <div class="fiveDaysWD">
     <div class="fiveDF">Five days forecast</div>
   </div> 
+  
+
+
 
   <script src="weather-api.js"></script>
   <script src="weather.js"></script>
