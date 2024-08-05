@@ -23,18 +23,23 @@ function currentWeatherSource() {
         return false; // Prevent form submission
     }
 
-function forecastWeatherSource () {
-    const BASE_URLF = "https://api.openweathermap.org/data/2.5/forecast";
-    const API_KEYF = "f1a7f601f87c9d97579ef8237cc83ff1";
-    cityInput = document.getElementById('cityInput').value;
-    const forecastWeatherSourceURL = `${BASE_URLF}?q=${cityInput}&appid=${API_KEYF}`;
-
+    function forecastWeatherSource () {
+        const BASE_URLF = "https://api.openweathermap.org/data/2.5/forecast";
+        const API_KEYF = "f1a7f601f87c9d97579ef8237cc83ff1";
+        cityInput = document.getElementById('cityInput').value;
+        const forecastWeatherSourceURL = `${BASE_URLF}?q=${cityInput}&appid=${API_KEYF}`;
     
-
-}
-
-
-
+        fetch(forecastWeatherSourceURL)
+        .then(res => data.json())
+        .then(data => {
+            const ftemplist = document.getElementById('ftemplist').textContent = `{}`
+    
+        })
+        .catch()
+    
+    
+    }
+    
 
 
     
