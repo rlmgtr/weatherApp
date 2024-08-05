@@ -10,7 +10,7 @@
 
 
   <div class="SearchForm">
-    <form onsubmit="return currentWeatherSource()">
+    <form onsubmit="return currentWeatherSource(); forecastWeatherSource()">
       <input id="cityInput" type="search" placeholder="Search for City" />
     </form>
   </div>
@@ -37,8 +37,11 @@
 
 
   <div class="fiveDaysWD">
-    <div class="fiveDF">Five days forecast</div>
-    <p id="ftest">forecast test</p>
+    <ul>
+      <li>
+        <p id="ftemp">ftemp</p>
+      </li>
+    </ul>
   </div> 
   
 
