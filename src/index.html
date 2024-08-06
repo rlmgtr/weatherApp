@@ -20,14 +20,20 @@
   <button name="fiveDaysW" type="submit">See five days forecast</button>
 
 <div class="currentWD">
-    <div class="day">
+    <div class="days">
       <h2 id="cityName"></h2>
-      <h3>Monday*</h3>
-      <h3>Time</h3>
+      <h3 id="day">Monday*</h3>
+      <h3 id="Month">Month*</h3>
+      <h3 id="date">date*</h3>
+      <h3 id="time">Time*</h3>
+      <h3 id="year">year*</h3>
     </div>
 
+
+   
+
 <div>
-      <p>25</p>
+      <p id="temp">25</p>
       <ul>
         <li id="min"></li>
         <li id="max"></li> 
@@ -51,5 +57,6 @@
 
   <script src="weather-api.js"></script>
   <script src="weather.js"></script>
+  <script src="/date.js"></script>
 </body>
 </html>
